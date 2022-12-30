@@ -1,0 +1,11 @@
+[package]
+name = "minimal"
+version = "0.1.0"
+authors = ["Neil Singh <neil2468@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+esp32c3-hal = "0.4"
+esp-println = { version = "0.3", features = [ "esp32c3" ] } 
+esp-backtrace = { version = "0.4", features = ["esp32c3", "panic-handler", "print-uart"] }
+riscv-rt = { version = "0.10" }
